@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script async src="script.js"></script>
+
+    <title>Formulaire de validations</title>
+  </head>
+  <body>
+   <main>
+    <h1>FORMULAIRE_JS</h1>
+
+    <form id="form" action="valide-form.html" method="GET" class="form-group">
+      <!-- Tous les champs sont obligatoires -->
+      <div>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" autofocus required  class="form-control"/>
+      </div>
+      <div>
+        <label for="mail">mail: </label>
+        <input type="text" name="mail" id="mail" autofocus required  class="form-control"/>
+      </div>
+
+      <div>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" autofocus required  class="form-control"/>
+      </div>
+
+      <div>
+        <label for="first-password">Password: </label>
+        <input
+          type="password"
+          name="firstPassword"
+          id="first-password"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <div>
+        <label for="second-password">Confirm Password: </label>
+        <input
+          type="password"
+          name="secondPassword"
+          id="second-password"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-5">Submit</button>
+    </form>
+
+    <div id="show-error"></div>
+    <!--div pour les messages erreurs -->
+   </main>
+  </body>
+</html>
